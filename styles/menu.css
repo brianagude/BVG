@@ -1,0 +1,87 @@
+.menu {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.cluster-filters,
+.menu-actions {
+  display: flex;
+  gap: 20px;
+}
+
+button.icon-button:hover img {
+  background: var(--color-grayscale-200);
+}
+
+button.icon-button img {
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+button.cluster-filter .bullet {
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-black);
+}
+
+button.cluster-filter .bullet-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-grayscale-200);
+  transition: all 0.2s ease-in-out;
+}
+
+button.cluster-filter.selected.color-1 .bullet-inner,
+button.cluster-filter.color-1:hover .bullet-inner {
+  background: var(--color-primary-1);
+}
+
+button.cluster-filter.selected.color-2 .bullet-inner,
+button.cluster-filter.color-2:hover .bullet-inner {
+  background: var(--color-primary-2);
+}
+
+button.cluster-filter.selected.color-3 .bullet-inner,
+button.cluster-filter.color-3:hover .bullet-inner {
+  background: var(--color-primary-3);
+}
+
+button.cluster-filter.selected.color-4 .bullet-inner,
+button.cluster-filter.color-4:hover .bullet-inner {
+  background: var(--color-primary-4);
+}
+
+button.cluster-filter.selected.color-5 .bullet-inner,
+button.cluster-filter.color-5:hover .bullet-inner {
+  background: var(--color-primary-5);
+}
+
+button.cluster-filter.selected.color-1:hover .bullet-inner,
+button.cluster-filter.selected.color-2:hover .bullet-inner,
+button.cluster-filter.selected.color-3:hover .bullet-inner,
+button.cluster-filter.selected.color-4:hover .bullet-inner,
+button.cluster-filter.selected.color-5:hover .bullet-inner {
+  background: var(--color-grayscale-200);
+}

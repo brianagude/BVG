@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Site</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">
+        <span class="h5 desktop-only" aria-hidden="false">Ultimate Brand-Voice Glossary</span>
+        <span class="h5 mobile-only" aria-hidden="false">UBVG</span>
+        <span class="sr-only">Ultimate Brand-Voice Glossary</span>
+      </h1>
+
+      <button class="menu-button" aria-label="Open main navigation" aria-controls="main-nav" aria-expanded="false">
+        Menu
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <div class="menu">
+    <div class="menu-container">
+      <div class="cluster-filters">
+        <button class="color-1 cluster-filter" aria-label="Approachable cluster filter" aria-pressed="false">
+          <div class="bullet">
+            <div class="bullet-inner"></div>
+            <span class="sr-only">Selection indicator</span>
+          </div>
+          Approachable
+        </button>
+        <button class="selected color-2 cluster-filter" aria-label="Friendly cluster filter" aria-pressed="true">
+          <div class="bullet">
+            <div class="bullet-inner"></div>
+            <span class="sr-only">Selection indicator</span>
+          </div>
+          Friendly
+        </button>
+        <button class="selected color-3 cluster-filter" aria-label="Innovative cluster filter" aria-pressed="true">
+          <div class="bullet">
+            <div class="bullet-inner"></div>
+            <span class="sr-only">Selection indicator</span>
+          </div>
+          Innovative
+        </button>
+        <button class="selected color-4 cluster-filter" aria-label="Trustworthy cluster filter" aria-pressed="true">
+          <div class="bullet">
+            <div class="bullet-inner"></div>
+            <span class="sr-only">Selection indicator</span>
+          </div>
+          Trustworthy
+        </button>
+        <button class="selected color-5 cluster-filter" aria-label="Sophisticated cluster filter" aria-pressed="true">
+          <div class="bullet">
+            <div class="bullet-inner"></div>
+            <span class="sr-only">Selection indicator</span>
+          </div>
+          Sophisticated
+        </button>
+      </div>
+      <div class="menu-actions">
+        <button class="icon-button menu-button" aria-label="Create a custom cluster">
+          <img src="assets/create-cluster.svg" alt="" aria-hidden="true" class="icon" />
+          Create Cluster (4)
+        </button>
+        <button class="icon-button menu-button" aria-label="Search brand voice glossary">
+          <img src="assets/search.svg" alt="" aria-hidden="true" class="icon" />
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="card-wrapper" role="main" aria-label="Introduction and welcome message">
+    <div class="card-wrapper-container">
+      
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4 selected">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/remove-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-2 selected">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/remove-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5 selected">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/remove-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3 selected">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/remove-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card color-2">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Visionary</h4>
+            <img src="assets/add-2.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Forward-thinking; continually seeks new solutions and inspires change.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/tesla.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Tesla</h6>
+            <p class="p3 brand-tagline">Accelerating the world’s transition to sustainable energy</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-3">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Whimsical</h4>
+            <img src="assets/add-3.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Lighthearted and imaginative; sparks joy and delight.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/skittles.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Skittles</h6>
+            <p class="p3 brand-tagline">Taste the Rainbow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-5">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Refined</h4>
+            <img src="assets/add-5.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Elegant and polished; communicates with grace and depth.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/chanel.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Chanel</h6>
+            <p class="p3 brand-tagline">The essence of luxury</p>
+          </div>
+        </div>
+      </div>
+      <div class="card color-4">
+        <div class="card-content">
+          <div class="card-content-header">
+            <h4>Reliable</h4>
+            <img src="assets/add-4.svg" alt="" aria-hidden="true" class="icon" />
+          </div>
+          <p class="p2 card-definition">Consistently delivers on promises; dependable and steady.</p>
+        </div>
+        <div class="card-brand">
+          <img src="assets/amazon.svg" alt="" aria-hidden="true" class="icon" />
+          <div class="card-brand-content">
+            <h6>Amazon</h6>
+            <p class="p3 brand-tagline">Delivering smiles</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="p3">
+        &copy; Made with ❤️ by
+        <a href="https://brianagude.com">Briana Gude</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

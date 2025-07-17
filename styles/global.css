@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --color-white: #fefaf6;
+  --color-black: #120b03;
+  --color-grayscale-200: #e0e0e0;
+  --color-grayscale-400: #bfbfbf;
+  --color-grayscale-600: #808080;
+  --color-grayscale-800: #404040;
+
+  --color-primary-1: #e96347;
+  --color-primary-2: #84a5f2;
+  --color-primary-3: #ea9a38;
+  --color-primary-4: #94c9a9;
+  --color-primary-5: #63458a;
+  --color-primary-6: #f58d75;
+
+  --color-accent-1: #fad8d1;
+  --color-accent-2: #e3ebfc;
+  --color-accent-3: #f9e1c3;
+  --color-accent-4: #e7f3ec;
+  --color-accent-5: #dcd3e9;
+  --color-accent-6: #fcddd6;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", system-ui, sans-serif;
+  background: var(--color-white);
+  color: var(--color-black);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+h1:not(.logo),
+.h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h6,
+.h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.p1 {
+  font-size: 18px;
+  line-height: 133%;
+}
+
+.p2 {
+  font-size: 16px;
+  line-height: 133%;
+}
+
+.p3 {
+  font-size: 14px;
+  line-height: 133%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--color-black);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+  text-transform: capitalize;
+}
+
+button:hover {
+  text-decoration: underline;
+}

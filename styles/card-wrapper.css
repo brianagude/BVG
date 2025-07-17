@@ -1,0 +1,127 @@
+.card-wrapper {
+  padding: 24px 0;
+  width: 100%;
+}
+
+.card-wrapper-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+  .card-wrapper-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-wrapper-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  background: var(--color-white);
+}
+
+.card > * {
+  width: 100%;
+}
+
+.card-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-tagline {
+  margin-top: 2px;
+}
+
+.card-definition {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 3px 4px 2px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content-header img {
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content-header img:hover {
+  background: var(--color-white);
+}
+
+.card.color-1 {
+  border: 1px solid var(--color-primary-1);
+}
+
+.card.selected.color-1,
+.card.color-1:hover {
+  background: var(--color-accent-1);
+}
+
+.card.color-2 {
+  border: 1px solid var(--color-primary-2);
+}
+
+.card.selected.color-2,
+.card.color-2:hover {
+  background: var(--color-accent-2);
+}
+
+.card.color-3 {
+  border: 1px solid var(--color-primary-3);
+}
+
+.card.selected.color-3,
+.card.color-3:hover {
+  background: var(--color-accent-3);
+}
+
+.card.color-4 {
+  border: 1px solid var(--color-primary-4);
+}
+
+.card.selected.color-4,
+.card.color-4:hover {
+  background: var(--color-accent-4);
+}
+
+.card.color-5 {
+  border: 1px solid var(--color-primary-5);
+}
+
+.card.selected.color-5,
+.card.color-5:hover {
+  background: var(--color-accent-5);
+}
