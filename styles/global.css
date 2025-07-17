@@ -64,14 +64,14 @@ h4,
 h5,
 .h5 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
 }
 
 h6,
 .h6 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
 }
 
@@ -142,8 +142,10 @@ button {
   font-weight: 600;
   line-height: 100%; /* 18px */
   text-transform: capitalize;
+
+  padding: 8px 0;
 }
 
-button:hover {
+/* button:hover {
   text-decoration: underline;
-}
+} */

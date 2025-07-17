@@ -1,5 +1,5 @@
 .menu {
-  padding: 16px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--color-black);
   display: flex;
   align-items: center;
@@ -34,6 +34,14 @@ button.icon-button:hover img {
 button.icon-button img {
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
+}
+
+button.cluster-filter:not(.selected) {
+  color: var(--color-grayscale-600);
+  transition: all 0.3s ease-in-out;
+}
+button.cluster-filter:not(.selected):hover {
+  color: var(--color-black);
 }
 
 button.cluster-filter .bullet {
